@@ -1,0 +1,14 @@
+spring.application.name: demo
+
+management:
+  server:
+    add-application-context-header: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: "/"
+  endpoint:
+    health:
+      probes:
+        enabled: true
